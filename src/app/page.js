@@ -32,7 +32,7 @@ export default async function Home({ searchParams }) {
 
     const response = await queryBuilder
       .range(start, end)
-      .order('nama_wisata', { ascending: true }); 
+      .order('jumlah_riview', { ascending: false }); 
 
     data = response.data || [];
     count = response.count || 0;
